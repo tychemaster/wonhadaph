@@ -48,39 +48,49 @@ body {
 }
 
 @media (max-width: 991px) {
-.navbar-nav {
-    position: relative;
-    }
+    .navbar-nav {
+        position: relative;
+        background-color: #391001ad;
+        padding: 5px;
+        }
 
-.navbar-brand {
-    position: relative;
+    .navbar-brand {
+        position: relative;
+    }
+    .video-container {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        }
 }
-.video-container {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
+@media (max-width: 370px) {
+    .text-logo {
+        display: none;
     }
 }
+
 .main-content {
     position: fixed;
     top: 22%;
     right: 20%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     color: #f1f1f1;
     padding: 20px;
-    border-radius: 25px;
+    border-radius: 5px;
     width: 60%;
+    text-shadow: 2px 2px 3px black;
 }
 #about-btn {
     width: 100px;
     font-size: 14px;
     padding: 5px;
     border-radius: 5px;
-    border: none;
+    border-color: #472519;
     background: #562310;
     color: #fff;
     cursor: pointer;
+    margin-right: 8px;
 }
 #about-btn:hover {
     background: #391001;
@@ -90,7 +100,7 @@ body {
     font-size: 14px;
     padding: 5px;
     border-radius: 5px;
-    border: none;
+    border-color: #472519;
     background: #562310;
     color: #fff;
     cursor: pointer;
@@ -99,18 +109,41 @@ body {
 #product-btn:hover {
     background: #391001;
 }
+
+@media (max-width: 420px) {
+    .main-content {
+        position: fixed;
+        top: 15%;
+        right: 15%;
+        width: 70%;
+    }
+}
+@media (max-width: 375px) {
+    .main-content {
+        position: fixed;
+        top: 15%;
+        right: 10%;
+        width: 80%;
+    }
+}
+
+
 .container {
     justify-content: space-between;
     position: fixed;
-    bottom: 0px;
+    bottom: 2%;
     color: #fff;
 }
 .ul-socmed {
     position: fixed;
-    right: 8%;
+    right: 3%;
     overflow: hidden;
 }
 .li-socmed {
     display: inline-block;
+}
+.copy-right {
+    position: fixed;
+    left: 3%;
 }
 
