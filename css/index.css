@@ -81,15 +81,16 @@ body {
     width: 60%;
     text-shadow: 2px 2px 3px black;
 }
+
 #about-btn {
     width: 100px;
     font-size: 14px;
     padding: 5px;
+    color: #fff;
+    cursor: pointer;
     border-radius: 5px;
     border-color: #472519;
     background: #562310;
-    color: #fff;
-    cursor: pointer;
     margin-right: 8px;
 }
 #about-btn:hover {
@@ -125,6 +126,26 @@ body {
         right: 10%;
         width: 80%;
     }
+}
+
+.about-us {
+    position: relative;
+    top: 80px;
+    left: 28px;
+    right: 32px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    width: 95%;
+    text-shadow: 2px 2px 3px black;
+}
+.abt-us-content {
+    text-indent: 3em;
+    text-align: justify;
+}
+.seon-u-img {
+    padding: 1%;
 }
 
 
