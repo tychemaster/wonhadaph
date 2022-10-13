@@ -64,6 +64,8 @@ body {
         height: 100%;
         }
 }
+
+
 @media (max-width: 370px) {
     .text-logo {
         display: none;
@@ -133,6 +135,7 @@ body {
     top: 80px;
     left: 28px;
     right: 32px;
+    bottom: 20px;
     background: rgba(0, 0, 0, 0.4);
     color: #f1f1f1;
     padding: 20px;
@@ -152,7 +155,7 @@ body {
 .container {
     justify-content: space-between;
     position: fixed;
-    bottom: 2%;
+    bottom: 1%;
     color: #fff;
 }
 .ul-socmed {
@@ -168,3 +171,40 @@ body {
     left: 3%;
 }
 
+#product-btn-abt {
+    width: 100%;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #472519;
+    background: #562310;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#product-btn-abt:hover {
+    background: #391001;
+}
+
+@media (max-width: 375px) {
+    .about-us {
+        position: relative;
+        top: 65px;
+        right: 10%;
+        width: 85%;
+    }
+}
+
+@media (max-width: 420px) {
+    .about-us {
+        position: relative;
+        top: 65px;
+        right: 10%;
+        width: 85%;
+    }
+    .seon-u-img {
+        width: 100%;
+        height: auto;
+    }
+}
