@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wonhada Herbal PH</title>
+    <title>Products - Wonhada Herbal PH</title>
     <meta name="description" content="Wonhada Herbal is an online destination for all your natural herbal products and our mission is to help you cleanse, detoxify, and heal yourself naturally. We offer a wide range of natural herbal products that can help you detoxify your body, improve digestion, and heal various ailments.">
     <meta name="keywords" content="herbal-coffee, herbal-tea, herba-juice, herbal-supplement, buahmerah, greenbarley, purplecorn, ganoderma, healthy-products, natural-products, korean-products">
     <link rel="icon" href="assets/icon/favicon.ico" type="image/x-icon">
@@ -26,9 +26,9 @@
             </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav">
-              <li><a class="nav-link active" href="index.html">Home</a></li>  
+              <li><a class="nav-link" href="index.html">Home</a></li>  
               <li><a class="nav-link" href="about.html">About Us</a></li>
-              <li><a class="nav-link" href="product.html">Our Products</a></li>
+              <li><a class="nav-link active" href="product.html">Our Products</a></li>
               <li><a class="nav-link" href="#">Distributors</a></li>
               <li><a class="nav-link" href="#">Connect with Us</a></li>
               <!--a class="nav-link disabled">Disabled</a -->
@@ -44,14 +44,87 @@
     </div>
     <main>
         <div class="main-content">
-            <div class="welcome">
-                <h1><em>"Nature heals and restores”</em></h1>
-                <p>Regular taking of <strong>원하다 Wonhada Herbal</strong> helps the body with toxin detoxification that most of the time cause of illnesses. As the toxin lessen on our body, tissue building will take place that will result to efficient body nutrients distribution.</p>
-                <p>We offer a wide range of natural herbal products that can help you detoxify your body, improve digestion, and heal various ailments. 
-                <a href="#">Read more</a></p>
-                <button id="about-btn"><a class="btn-link" style="text-decoration: none; color: #fff;" href="about.html"> About Us</a></button>
-                <button id="product-btn"><a class="btn-link" style="text-decoration: none; color: #fff;" href="product.html">Our Products</a></button>
+            <div class="product-carousel">
+
+                <!-- Video Container -->
+                <div class="coffee-vid-container">
+                    <video controls id="coffee-vid" style="width: 100%;">
+                        <source src="/wonhadaph/assets/vid/coffee-vid.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <!-- Video Container -->
+
+                <H1 class="prod-heading">원하다 Wonhada Herbal Products:</H1>
+                <hr>
+                <p>We believe that there is no one size fits all approach to a healthy lifestyle, which is why we offer a variety natural herbal products. That's why we offer a wide range of natural herbal products that can help you detoxify your body, improve digestion, and heal various ailments. <strong>Our products are 100% natural!</strong></p>
+
+                <!-- Carousel wrapper -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/wonhadaph/assets/img/coffee2.jpg" class="d-block w-100 rounded" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/wonhadaph/assets/img/juice5.jpg" class="d-block w-100 rounded" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/wonhadaph/assets/img/cap2.jpg" class="d-block w-100 rounded" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <!-- Carousel wrapper -->
             </div>
+
+            <!-- Product Card -->
+            <div class="product-cart">
+                <div class="row">
+                    
+                        <div class="prod-card col-11">
+                            <img src="/wonhadaph/assets/img/coffee1.jpg" class="card-img-top" alt="Wonhada Coffee" style="width: 100%; padding: 5%;">
+                            <div class="card-body">
+                                <h5 class="card-title">원하다 Wonhada Herbal Coffee</h5>
+                                <p class="card-text"> The most delicious healthy coffee.</p>
+                                <a href="#" id="about-btn" style="text-decoration: none; color: #fff;">Purchase Now</a>
+                            </div>
+                        </div>
+                    
+                        <div class="prod-card col-11">
+                            <img src="/wonhadaph/assets/img/cap2.jpg" class="card-img-top" alt="Wonhada Capsule" style="width: 100%; padding: 5%;">
+                            <div class="card-body">
+                                <h5 class="card-title">원하다 Wonhada Herbal Capsule</h5>
+                                <p class="card-text">Organic and All Natural - 100%! 30 capsules.</p>
+                                <a href="#" id="about-btn" style="text-decoration: none; color: #fff;">Purchase Now</a>
+                            </div>
+                        </div>
+                    
+                        <div class="prod-card col-11">
+                            <img src="/wonhadaph/assets/img/juice5.jpg" class="card-img-top" alt="Wonhada Juice" style="width: 100%; padding: 5%;">
+                            <div class="card-body">
+                                <h5 class="card-title">원하다 Wonhada Herbal Juice</h5>
+                                <p class="card-text">Refreshingly healthy! Boost your immunity!</p>
+                                <a href="#" id="about-btn" style="text-decoration: none; color: #fff;">Purchase Now</a>
+                            </div>
+                        </div>
+
+                        <div class="prod-card col-11 wonhada-logo">
+                            <img src="/wonhadaph/assets/icon/ms-icon-310x310.png" class="card-img-top card-logo" alt="Wonhada Logo">
+                        </div>
+                </div>
+            </div>
+            <!-- Product Card -->
         </div>
     </main>
     <div class="container">

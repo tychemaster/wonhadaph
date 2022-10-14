@@ -68,7 +68,6 @@ body {
     border-radius: 5px;
     border-color: #472519;
     background: #562310;
-    margin-right: 8px;
 }
 #about-btn:hover {
     background: #391001;
@@ -109,17 +108,24 @@ body {
     padding: 1%;
 }
 
+footer {
+    position: fixed;
+    bottom: 1%;
+    left: 0;
+    background-color: #391001;
+    width: 100%;
+    height: 40px;
+}
 
 .container {
     justify-content: space-between;
-    position: fixed;
-    bottom: 1%;
     color: #fff;
 }
 .ul-socmed {
     position: fixed;
     right: 3%;
     overflow: hidden;
+    margin: 1px;
 }
 .li-socmed {
     display: inline-block;
@@ -145,6 +151,53 @@ body {
     background: #391001;
 }
 
+
+.product-carousel {
+    position: relative;
+    top: 80px;
+    left: 2%;
+    width: 70%;
+    color: #fff;
+    text-shadow: 2px 2px 3px black;
+    text-align:left;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.product-cart {
+    position: absolute;
+    top: 80px;
+    right: 2%;
+    width: 25%;
+    padding-left: 5px;
+}
+
+.prod-card {
+    margin: 3px;
+    background-color: #fff;
+    color: #391001;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+
+.card-body {
+    padding: 5%;
+}
+
+.coffee-vid-container {
+    position: relative;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.wonhada-logo {
+    background: none;
+    color: #fff;
+    text-shadow: 2px 2px 3px black;
+    display: none;
+}
+
 @media (max-width: 370px) {
     .about-us {
         position: relative;
@@ -160,6 +213,40 @@ body {
     }
     .text-logo {
         display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        position: relative;
+        background-color: #391001ad;
+        padding: 5px;
+        }
+
+    .navbar-brand {
+        position: relative;
+        }
+    .video-container {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        }
+    .product-cart {
+        position: absolute;
+        top: 80px;
+        left: 3%;
+        width: 95%;
+        }
+    .product-carousel {
+        position: relative;
+        top: 536px;
+        left: 2%;
+        width: 95%;
+        }
+    .prod-card {
+        width: 30%;
+        margin: 1%;
     }
 }
 
@@ -180,22 +267,38 @@ body {
         right: 15%;
         width: 70%;
     }
-}
-
-@media (max-width: 991px) {
-    .navbar-nav {
-        position: relative;
-        background-color: #391001ad;
-        padding: 5px;
-        }
-
-    .navbar-brand {
-        position: relative;
-    }
-    .video-container {
+    .ul-socmed {
         position: fixed;
-        left: 0;
-        top: 0;
-        height: 100%;
+        right: 12%;
+        overflow: hidden;
+        margin: 1px;
+    }
+    
+    .product-cart {
+        position: absolute;
+        top: 80px;
+        left: 8%;
+        width: 100%;
+    }    
+    .prod-card {
+        width: 40%;
+    }
+    .product-carousel {
+        position: absolute;
+        top: 860px;
+        left: 2%;
+        width: 95%;
         }
+    .coffee-vid-container {
+        display: none;
+    }
+    .wonhada-logo {
+        position: inherit;
+        display: contents;
+    }
+    .card-logo {
+        width: 40%;
+        height: 40%;
+        padding-top: 25%;
+    }
 }
