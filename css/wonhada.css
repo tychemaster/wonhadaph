@@ -10,6 +10,7 @@ body {
     position: relative;
     }
 
+ /* Navbar and Background Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -46,7 +47,41 @@ body {
 #video-bg {
     height: 100%;
 }
+ /* Navbar and Background Styles */
 
+
+
+/* Footer styles */
+footer {
+    position: fixed;
+    bottom: 1%;
+    left: 0;
+    background-color: #391001;
+    width: 100%;
+    height: 40px;
+}
+
+.container {
+    justify-content: space-between;
+    color: #fff;
+}
+.ul-socmed {
+    position: fixed;
+    right: 3%;
+    overflow: hidden;
+    margin: 1px;
+}
+.li-socmed {
+    display: inline-block;
+}
+.copy-right {
+    position: fixed;
+    left: 3%;
+}
+/* Footer styles */
+
+ 
+ /* Home page styles */
 .welcome {
     position: fixed;
     top: 22%;
@@ -58,7 +93,6 @@ body {
     width: 60%;
     text-shadow: 2px 2px 3px black;
 }
-
 #about-btn {
     width: 120px;
     font-size: 14px;
@@ -86,7 +120,10 @@ body {
 #product-btn:hover {
     background: #391001;
 }
+/* Home page styles */
 
+
+/* About page styles */
 .about-us {
     position: relative;
     top: 80px;
@@ -108,32 +145,24 @@ body {
     padding: 1%;
 }
 
-footer {
-    position: fixed;
-    bottom: 1%;
-    left: 0;
-    background-color: #391001;
-    width: 100%;
-    height: 40px;
+.about-info {
+    position: relative;
+    margin-top: 3px;
 }
 
-.container {
-    justify-content: space-between;
-    color: #fff;
+@media (min-width: 950px) {
+.comp-details {
+    position: absolute;
+    bottom: 8.5%;
+    left: 50%;
 }
-.ul-socmed {
-    position: fixed;
-    right: 3%;
-    overflow: hidden;
-    margin: 1px;
+.site-map {
+    width: 420px;
+    height: 360px;
 }
-.li-socmed {
-    display: inline-block;
 }
-.copy-right {
-    position: fixed;
-    left: 3%;
-}
+
+
 
 #product-btn-abt {
     width: 100%;
@@ -150,8 +179,10 @@ footer {
 #product-btn-abt:hover {
     background: #391001;
 }
+/* About page styles */
 
 
+/* Product page styles */
 .product-carousel {
     position: relative;
     top: 80px;
@@ -197,7 +228,10 @@ footer {
     text-shadow: 2px 2px 3px black;
     display: none;
 }
+/* Product page styles */
 
+
+/* Responsive Queries */
 @media (max-width: 370px) {
     .about-us {
         position: relative;
@@ -217,6 +251,7 @@ footer {
 }
 
 @media (max-width: 991px) {
+    
     .navbar-nav {
         position: relative;
         background-color: #391001ad;
@@ -226,6 +261,8 @@ footer {
     .navbar-brand {
         position: relative;
         }
+
+    
     .video-container {
         position: fixed;
         left: 0;
@@ -302,3 +339,4 @@ footer {
         padding-top: 25%;
     }
 }
+
