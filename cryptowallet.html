@@ -49,9 +49,21 @@
             </div>
 
             <div class="wallet-connect">
-                <h1>Connect Metamask</h1>
+
+                <div>
+                    <img src="./assets/img/cryptorewards.png" ALIGN="left" class="seon-u-img" width="100%" height="" alt="">
+                </div>
+                <br>
+
+                <h1>Connect Crypto Wallet</h1>
                 <p class="desc">Please connect your Metamask Wallet.</p>
-                <button type="button" class="btn btn-success" id="connect-button">Connect</button>
+                <button type="button" class="btn btn-success onboard" id="connect-button">Connect</button>
+                
+                
+                <p class="note">
+                    <br>
+                    <b>IMPORTANT:</b> You should install Metamask prior to crypto wallet connection. Install Metamask on your browser on this <a href="https://metamask.io/download/">Link.</a>
+                </p>
                 <script>
                     document.getElementById('connect-button').addEventListener('click', event => {
                       let account;
@@ -72,11 +84,13 @@
                 </script>
 
             </div>
-
+            
             <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script>
             <div class="livecoin">
                 <div class="livecoinwatch-widget-3" lcw-base="USD" lcw-d-head="true" lcw-d-name="true" lcw-d-code="true" lcw-d-icon="true" lcw-color-tx="#ffffff" lcw-color-bg="#3b1f0e" lcw-border-w="1" ></div>
             </div>
+            <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script>
+            <div class="livecoinwatch-widget-1 livecoinwatch" lcw-coin="BTC" lcw-base="USD" lcw-secondary="BTC" lcw-period="d" lcw-color-tx="#ffffff" lcw-color-pr="#58c7c5" lcw-color-bg="#3b1f0e" lcw-border-w="1" ></div>
         </div>
     </main>
     <!--Connect page content-->
